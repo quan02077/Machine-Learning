@@ -32,7 +32,6 @@ class NaiveBayes:
             posterior = prior + posterior
             posteriors.append(posterior)
 
-        # return class with highest posterior probability
         return self._classes[np.argmax(posteriors)]
 
     # tính mật độ xác suất  
