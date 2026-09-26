@@ -80,14 +80,14 @@ print(f"Logistic Regression Accuracy: {accuracy(y_test_c, pred_log) * 100:.2f}%\
 
 
 # =========================================================
-# 6. MÔ HÌNH 3: GAUSSIAN NAÏVE BAYES
+# 6. MÔ HÌNH 3: GAUSSIAN NAIVE BAYES
 # =========================================================
-print("--- 3. GAUSSIAN NAÏVE BAYES ---")
+print("--- 3. GAUSSIAN NAIVE BAYES ---")
 nb = NaiveBayes()
 nb.fit(X_train_scaled, y_train_c)
 pred_nb = nb.predict(X_test_scaled)
 
-print(f"Naïve Bayes Accuracy: {accuracy(y_test_c, pred_nb) * 100:.2f}%\n")
+print(f"Naive Bayes Accuracy: {accuracy(y_test_c, pred_nb) * 100:.2f}%\n")
 
 
 # =========================================================
